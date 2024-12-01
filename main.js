@@ -170,43 +170,27 @@ voice2.volume = 1;
 audio.volume = 0.5;
 voice3.volume = 1;
 login.addEventListener('click',()=> {
-  if(localStorage.getItem('key') == null && key.value == 4332){
+  const validKeys = [4332, 2234, 7766, 3345, 2245]; // Array of valid keys
+
+if (localStorage.getItem('key') == null) {
+  if (validKeys.includes(parseInt(key.value))) { // Check if the key is valid
     pass.classList.add('show-none');
     choice.classList.toggle('show-flex');
-    localStorage.setItem('key',key.value)
+    localStorage.setItem('key', key.value); // Save the key to localStorage
     audio.play();
     audio.loop = true;
-  }else if(localStorage.getItem('key') == null && key.value == 2234){
-    pass.classList.add('show-none');
-    choice.classList.toggle('show-flex');
-    localStorage.setItem('key',key.value)
-    audio.play();
-    audio.loop = true;
-  }else if(localStorage.getItem('key') == null && key.value == 7766){
-    pass.classList.add('show-none');
-    choice.classList.toggle('show-flex');
-    localStorage.setItem('key',key.value)
-    audio.play();
-    audio.loop = true;
-  }else if(localStorage.getItem('key') == null && key.value == 3345){
-    pass.classList.add('show-none');
-    choice.classList.toggle('show-flex');
-    localStorage.setItem('key',key.value)
-    audio.play();
-    audio.loop = true;
-  }else if(localStorage.getItem('key') == null && key.value == 2245){
-    pass.classList.add('show-none');
-    choice.classList.toggle('show-flex');
-    localStorage.setItem('key',key.value)
-    audio.play();
-    audio.loop = true;
-  }else{
+  } else {
     nJToast.warning({
-      message:'I dont know you..',
-      textColor:'white'
+      message: 'I don\'t know you..',
+      textColor: 'white'
     });
-    
   }
+} else {
+  nJToast.warning({
+    message: 'Key already used!',
+    textColor: 'white'
+  });
+}
 });
 
 //push
