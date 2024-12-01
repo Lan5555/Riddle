@@ -170,31 +170,31 @@ voice2.volume = 1;
 audio.volume = 0.5;
 voice3.volume = 1;
 login.addEventListener('click',()=> {
-  if(localStorage.getItem('key') != '4322' && key.value == 4332){
+  if(localStorage.getItem('key') == null && key.value == 4332){
     pass.classList.add('show-none');
     choice.classList.toggle('show-flex');
     localStorage.setItem('key',key.value)
     audio.play();
     audio.loop = true;
-  }else if(localStorage.getItem('key') != '2234' && key.value == 2234){
+  }else if(localStorage.getItem('key') == null && key.value == 2234){
     pass.classList.add('show-none');
     choice.classList.toggle('show-flex');
     localStorage.setItem('key',key.value)
     audio.play();
     audio.loop = true;
-  }else if(localStorage.getItem('key') != '7766' && key.value == 7766){
+  }else if(localStorage.getItem('key') == null && key.value == 7766){
     pass.classList.add('show-none');
     choice.classList.toggle('show-flex');
     localStorage.setItem('key',key.value)
     audio.play();
     audio.loop = true;
-  }else if(localStorage.getItem('key') != '3345' && key.value == 3345){
+  }else if(localStorage.getItem('key') == null && key.value == 3345){
     pass.classList.add('show-none');
     choice.classList.toggle('show-flex');
     localStorage.setItem('key',key.value)
     audio.play();
     audio.loop = true;
-  }else if(localStorage.getItem('key') != '2245' && key.value == 2245){
+  }else if(localStorage.getItem('key') == null && key.value == 2245){
     pass.classList.add('show-none');
     choice.classList.toggle('show-flex');
     localStorage.setItem('key',key.value)
