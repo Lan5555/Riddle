@@ -50,12 +50,12 @@ body{
   display: flex;
 }
 ::-webkit-scrollbar{
-  background: linear-gradient(to right, red,#1a1a2e);
+  background: transparent;
   border-radius: 20px;
   width: 5px;
 }
 ::-webkit-scrollbar-track{
-  background: linear-gradient(to right, red,pink);
+  background: transparent;
   border-radius: 6px;
 }
 ::-webkit-scrollbar-track{
