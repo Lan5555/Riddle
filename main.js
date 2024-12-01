@@ -1,4 +1,4 @@
-import {nJToast} from "../node_modules/nj-library/main.js";
+import {nJToast} from "./node_modules/nj-library/main.js";
 
 //Push
 const pop = (function () {
