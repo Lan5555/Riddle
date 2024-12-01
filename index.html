@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Riddle</title>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/node_modules/nj-library//style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-obsolate" onbeforeunload="return message()">
+  <div class="flex centered justify-center w-80 h-30 rounded shadow p-2 space flex-col card pass">
+    <h2 class="text-center text-white">
+      Enter access key
+    </h2>
+    <input class="w-full outline-none border-none bg-obsolate p-2 rounded text-white key">
+    <button class="gradient-4 rounded p-1 shadow w-full  border-none text-white login">Confirm</button>
+  </div>
+  
+  <div class="flex justify-center h-full w-100 bg-black container fade-in show-none choice">
+    <div class="flex flex-col space card shadow rounded h-30 w-70 p-2">
+      <h2 class="text-center">Select your Path</h2>
+      <label for="wealth">
+      <input id="wealth" type="radio" value="wealth" name="path" class="box1"> Wealth</label>
+      <label for="fame">
+       <input id="fame" type="radio" value="fame" name="path" class="box1"> Fame </label>
+       <label for="power">
+       <input id="power" type="radio" value="power" name="path" class="box1"> Power </label>   
+       <button class="gradient-4 rounded shadow p-1 border-none text-white confirm">Confirm</button>
+    </div>
+  </div>
+  <div class="centered">
+  <div class="loader-spinner load show-none"></div>
+  </div>
+  <!-- Next Page -->
+   <div class="h-full w-100 nextPage flex justify-center flex-col space bg-obsolate show-none fade-in next">
+    <h2 class="text-white absolute top-0 left-3 attempt"></h2>
+    <div class="absolute top-0 mt-2 right-1 circle shadow  h-2 w-2 light-border menu bg-white"></div>
+    <div class="shadow w-80 h-40 p-2 absolute top-10 rounded rounded-edges-bottom card overflow-auto">
+      <p class="text font-lg"></p>
+    </div>
+    <div class="flex absolute bottom-10 w-80 h-30 shadowXl p-2 flex-col space card">
+    <h2 class="text-center gradient-4 p-1 text-white rounded shadow">Input answer below</h2>
+      <textarea class="w-auto h-auto rounded border-none outline-none shadow p-2 card text-white textarea" placeholder="Enter Answer"></textarea>
+      <button class="gradient-4 w-auto h-auto rounded border-none shadow p-2 hover text-white sub">Submit</button>
+    </div>
+   </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

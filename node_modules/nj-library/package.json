@@ -1,0 +1,19 @@
+{
+  "name": "nj-library",
+  "version": "1.0.5",
+  "description": "Excellent widgets to use",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lan5555/CDN2.git"
+  },
+  "author": "Nicholas Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lan5555/CDN2/issues"
+  },
+  "homepage": "https://github.com/Lan5555/CDN2#readme"
+}
