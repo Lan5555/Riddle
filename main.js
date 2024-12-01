@@ -176,7 +176,7 @@ if (localStorage.getItem('key') == null) {
   if (validKeys.includes(parseInt(key.value))) { // Check if the key is valid
     pass.classList.add('show-none');
     choice.classList.toggle('show-flex');
-    localStorage.setItem('key', key.value); // Save the key to localStorage
+    localStorage.setItem('key', key.value); // Save the key to localStorag
     audio.play();
     audio.loop = true;
   } else {
